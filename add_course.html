@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>LO</h2>
+        </div>
+        <nav>
+            <ul>
+                <div class="home"><li><a href="index.html">Home</a></li></div>
+                <div class="mycourses"><li><a href="courses.html">My Courses</a></li></div>
+                <div class="addcourse"><li><a href="add_course.html">Add Course</a></li></div>
+                <div class="contactus"><li><a href="Contact_Us.html">Contact Us</a></li></div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="all">
+            <div class="new">Add a New Course</div>
+            <section class="add-course">
+                <form action="courses.html" method="get">
+                    <div class="form-group">
+                        <input type="text" id="course-name" name="course-name" placeholder="course-name" class="input-field" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="number" id="credit-hours" name="credit-hours" placeholder="credit-hours" class="input-field" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="instructor" name="instructor" placeholder="instructor" class="input-field" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="notes" id="notes" placeholder="any detailes..." class="input-field"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit">Add Course</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2026 My Course Organizer</p>
+</footer>
+</html>
